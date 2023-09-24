@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DeletePerson_UC4
+namespace AddMultiplePersong_UC5
 {
     internal class AddressBook
     {
@@ -52,6 +52,7 @@ namespace DeletePerson_UC4
                 Console.WriteLine("ZipCode: " + contact.zipcode);
                 Console.WriteLine("Phone: " + contact.Phone);
                 Console.WriteLine("Email Id: " + contact.emailID);
+                Console.WriteLine("=====================================================");
             }
         }
 
@@ -136,15 +137,27 @@ namespace DeletePerson_UC4
         public void Delete()
         {
             Console.WriteLine("Enter the name : ");
-            string name= Console.ReadLine();
-            for(int i = 0; i < add.Count; i++)
+            string name = Console.ReadLine();
+            for (int i = 0; i < add.Count; i++)
             {
                 if (add[i].FirstName == name)
                 {
-                    
+
                     Console.WriteLine("record {0} successfully deleted", add[i].FirstName);
                     add.RemoveAt(i);
                 }
+            }
+        }
+
+        public void AddMultiple()
+        {
+            Console.WriteLine("Enter how many person do you want: ");
+            int Num = Convert.ToInt32(Console.ReadLine());
+            while (Num > 0)
+            {
+                AddBook();
+                Console.WriteLine("================================");
+                Num--;
             }
         }
     }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DeletePerson_UC4
+namespace AddMultiplePersong_UC5
 {
     internal class Contact
     {
