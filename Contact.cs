@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Add_New_Contact_UC2
+namespace EditExistingContact_UC3
 {
     internal class Contact
     {

@@ -1,15 +1,18 @@
-﻿namespace Add_New_Contact_UC2
+﻿namespace EditExistingContact_UC3
 {
     internal class MainBook
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, Welcome To Address Book");
-            Console.WriteLine();
-
             AddressBook addressBook = new AddressBook();
             addressBook.AddBook();
+            Console.WriteLine("=================================================");
             addressBook.display();
+            Console.WriteLine("=================================================");
+            addressBook.Edit();
+            Console.WriteLine("=================================================");
+           // addressBook.display();
+            
         }
     }
 }
