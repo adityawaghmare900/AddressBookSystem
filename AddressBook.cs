@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EditExistingContact_UC3
+namespace DeletePerson_UC4
 {
     internal class AddressBook
     {
@@ -59,13 +59,13 @@ namespace EditExistingContact_UC3
         {
             Console.WriteLine("Enter the First name");
             string data = Console.ReadLine();
-            foreach(var contact in add)
+            foreach (var contact in add)
             {
-                if (contact.FirstName.Equals (data))
+                if (contact.FirstName.Equals(data))
                 {
                     Console.WriteLine("enter your choice to change: 1.First Name\n 2.Last Name\n 3.Address\n 4.City\n 5.State\n 6.zipcode\n 7.phone\n 8.emailId\n");
-                    int choice =Convert.ToInt16 (Console.ReadLine());
-                    switch(choice)
+                    int choice = Convert.ToInt16(Console.ReadLine());
+                    switch (choice)
                     {
                         case 1:
                             Console.Write("Enter the new name:");
@@ -91,7 +91,7 @@ namespace EditExistingContact_UC3
                         case 4:
                             Console.Write("Enter the new city:");
                             string city = Console.ReadLine();
-                            contact.City=city;
+                            contact.City = city;
                             Console.WriteLine("new City added successfully");
                             break;
 
@@ -104,7 +104,7 @@ namespace EditExistingContact_UC3
 
                         case 6:
                             Console.Write("Enter the new zipcode:");
-                            long zipcode =long.Parse(Console.ReadLine());
+                            long zipcode = long.Parse(Console.ReadLine());
                             contact.zipcode = zipcode;
                             Console.WriteLine("new zipcode added successfully");
                             break;
@@ -129,6 +129,21 @@ namespace EditExistingContact_UC3
 
                     }
 
+                }
+            }
+        }
+
+        public void Delete()
+        {
+            Console.WriteLine("Enter the name : ");
+            string name= Console.ReadLine();
+            for(int i = 0; i < add.Count; i++)
+            {
+                if (add[i].FirstName == name)
+                {
+                    
+                    Console.WriteLine("record {0} successfully deleted", add[i].FirstName);
+                    add.RemoveAt(i);
                 }
             }
         }
