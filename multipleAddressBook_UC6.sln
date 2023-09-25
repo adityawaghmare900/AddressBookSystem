@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddMultiplePersong_UC5", "AddMultiplePersong_UC5.csproj", "{EE66D8AB-2347-45E4-ABF0-5834E69161E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "multipleAddressBook_UC6", "multipleAddressBook_UC6.csproj", "{0166CA3E-DB75-4D8B-A44F-0E3F08420DC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EE66D8AB-2347-45E4-ABF0-5834E69161E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE66D8AB-2347-45E4-ABF0-5834E69161E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE66D8AB-2347-45E4-ABF0-5834E69161E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE66D8AB-2347-45E4-ABF0-5834E69161E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0166CA3E-DB75-4D8B-A44F-0E3F08420DC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0166CA3E-DB75-4D8B-A44F-0E3F08420DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0166CA3E-DB75-4D8B-A44F-0E3F08420DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0166CA3E-DB75-4D8B-A44F-0E3F08420DC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3E2E4743-DF5B-48AF-926F-A6A9045BCC77}
+		SolutionGuid = {ECD790EA-7D21-4DE7-A6BF-B031D4C08755}
 	EndGlobalSection
 EndGlobal

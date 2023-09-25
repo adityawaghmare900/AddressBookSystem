@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AddMultiplePersong_UC5
+namespace multipleAddressBook_UC6
 {
-    internal class Contact
+    public class Contact
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -16,5 +16,7 @@ namespace AddMultiplePersong_UC5
         public long zipcode { get; set; }
         public long Phone { get; set; }
         public string emailID { get; set; }
+
+
     }
 }
